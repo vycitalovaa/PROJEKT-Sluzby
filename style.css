@@ -1,0 +1,278 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #fafafa;
+  font-weight: 300;
+}
+h1 {
+  font-weight: 500;
+  font-size: 28px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.container {
+  text-align: center;
+}
+.introduction {
+  
+  color: #8b8b8b;
+}
+.introduction h1 {
+  margin-top: 40px;
+  color: black;
+}
+.introduction hr {
+  width: 60px;
+  border: 2px solid #407bff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.traveler {
+  text-align: center;
+  margin-top: 60px;
+  width: 350px;
+  height: 290px;
+}
+.description {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8b8b8b;
+}
+@media screen and (min-width: 640px) {
+  .traveler {
+    max-width: 400px;
+    max-height: 330px;
+  }
+  .description {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.choice {
+  margin-bottom: 60px;
+}
+.choice button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.choice button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+.blue {
+  background-color: #407bff;
+  margin-bottom: 10px;
+}
+.grey {
+  background-color: #8b8b8b;
+}
+@media screen and (min-width: 1100px)
+  {
+    .container {display: flex;
+    max-width: 1040px;
+  margin-right: auto;
+margin-left: auto;
+justify-content: space-between;
+text-align: left;
+margin-bottom: 80px; }
+
+.happy {
+  order: 2;
+  width: 490px;
+  flex: 0 1 490px;
+  margin-top: 60px;
+  
+}
+.traveler {
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.descriptionmain
+{ order: 1;
+width: 490px;
+flex: 0 1 490px;
+margin-top: 130px;
+}
+.introduction, .description 
+{ text-align: left;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.introduction p
+{ width: 490px;
+font-size: 16px;}
+
+.introduction hr 
+{margin-left: 0;} 
+
+  
+}
+@media screen and (min-width: 640px) {
+  .choice {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+
+  .blue {
+    flex: 0 1 45%;
+    padding: 10px 30px;
+    margin-bottom: 0;
+  }
+  .grey {
+    flex: 0 1 50%;
+    padding: 10px 30px;
+    margin-bottom: 0;
+  }
+  }
+@media screen and (min-width: 1100px) {
+ .choice 
+ { width: 440px;
+  display: flex;
+  margin-left: 0;
+} 
+.choice button {
+  margin: 0;
+}
+.blue 
+{ flex: 0 1 200px;
+  
+}
+.grey {flex: 0 1 220px;
+  margin-left: 20px;
+}
+}
+
+.services,
+.guides {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.services p,
+.guides p {
+  color: #8b8b8b;
+  margin-bottom: 30px;
+}
+.services {
+  margin-bottom: 60px;
+}
+.services h2,
+.guides h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  padding: 5%;
+  margin-bottom: 15px;
+  background-color: white;
+  color: #8b8b8b;
+  font-size: 13px;
+  font-weight: 300;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+.icon {
+  width: 10%;
+  flex: 0 1 10%;
+}
+.option {
+  flex: 0 1 80%;
+}
+@media screen and (min-width: 640px) {
+  .services p,
+  .guides p {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .services 
+  {margin-bottom: 80px;}
+  .flexcards1, .flexcards2 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 1 calc((100% - 40px) / 3);
+    padding: 40px 15px;
+    text-align: center;
+    display: block;
+  }
+  .icon {
+    width: 45px;   
+    height: 40px; 
+    margin-bottom: 20px;
+  }
+  .option {
+    text-align: center;
+  }
+}
+@media screen and (min-width:1100px)
+{ 
+  .services 
+  {display: flex;
+  width: 1040px;
+text-align: left;
+margin-bottom: 80px;
+}
+.services h2 {margin-top: 0;}
+  .flexcards1
+  { 
+    order: 1;
+  max-width: 550px;
+  flex: 0 1 550px;
+margin-right: 60px;}
+  .services-intro 
+  { max-width: 430px;
+  flex: 0 1 430px;
+order: 2;
+margin-left: 60px;}
+.guides 
+{ display: flex;
+  width: 1040px;
+text-align: left;
+}
+.guides h2 
+{margin-top: 0;}
+.guides-intro 
+{order: 1;
+max-width: 430px;
+flex: 0 1 430px;
+margin-right: 60px;}
+.flexcards2 
+{order: 2;
+  max-width: 550px;
+  flex: 0 1 550px;
+margin-left: 60px;}
+
+
+  }
+
+
